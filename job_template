@@ -1,0 +1,4 @@
+job_queue: job_template
+test_data:
+        test_cmds: |
+          ssh -o StrictHostKeyChecking=accept-new -t ubuntu@$DEVICE_IP "mmcli -L"
