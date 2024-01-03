@@ -2,3 +2,4 @@ job_queue: job_template
 test_data:
         test_cmds: |
           ssh -o StrictHostKeyChecking=accept-new -t ubuntu@$DEVICE_IP "mmcli -L"
+          #ssh -o StrictHostKeyChecking=accept-new -t ubuntu@$DEVICE_IP "timeout 5 fwupdmgr get-devices --json"
